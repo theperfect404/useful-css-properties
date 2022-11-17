@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smooth Scrolling</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #page-one,
+      #page-two,
+      #page-three {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right, #64748b, #71717a);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #page-two {
+        background-image: linear-gradient(to right, #71717a, #64748b);
+      }
+      .card1,
+      .card2 {
+        background-image: linear-gradient(to right, #e2e8f0, #cbd5e1);
+        width: 600px;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+      a {
+        background-image: linear-gradient(to right, #334155, #3f3f46);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+        padding: 0.7rem 1.7rem;
+        border-radius: 1rem;
+        width: fit-content;
+        margin-top: 1.5rem;
+        text-decoration: none;
+        color: #e2e8f0;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="page-one">
+      <div class="card1">
+        <h1>Page One</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+          tempore expedita pariatur perspiciatis. Optio fuga iure laudantium
+          quam consectetur adipisicing magni esse quis? Temporibus sit deserunt
+          corrupti expedita pariatur illum. Eligendi quibusdam dolor sit
+          temporibus voluptatem?
+        </p>
+        <a href="#page-two">Go to Page Two</a>
+      </div>
+    </section>
+    <section id="page-two">
+      <div class="card2">
+        <h1>Page Two</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+          tempore expedita pariatur perspiciatis. Optio fuga iure laudantium
+          quam consectetur adipisicing magni esse quis? Temporibus sit deserunt
+          corrupti expedita pariatur illum. Eligendi quibusdam dolor sit
+          temporibus voluptatem?
+        </p>
+        <a href="#page-one">Back to Page one</a>
+      </div>
+    </section>
+
+    <section id="page-three">
+      <div class="card2">
+        <h1>Page Three</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+          tempore expedita pariatur perspiciatis. Optio fuga iure laudantium
+          quam consectetur adipisicing magni esse quis? Temporibus sit deserunt
+          corrupti expedita pariatur illum. Eligendi quibusdam dolor sit
+          temporibus voluptatem?
+        </p>
+      </div>
+    </section>
+    <a href="#">Back To Top</a>
+  </body>
+</html>
